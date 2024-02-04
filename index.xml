@@ -15,5 +15,12 @@
       <guid>https://plog.uk/posts/update-my-blog/</guid>
       <description>#just testing for showtoc #just testing for showtoc2</description>
     </item>
+    <item>
+      <title>测试中文标题</title>
+      <link>https://plog.uk/posts/update-my-blog-%E5%89%AF%E6%9C%AC/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://plog.uk/posts/update-my-blog-%E5%89%AF%E6%9C%AC/</guid>
+      <description>测试中文内容 #just testing for showtoc #just testing for showtoc2</description>
+    </item>
   </channel>
 </rss>
