@@ -10,17 +10,27 @@
     <atom:link href="https://plog.uk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JUST FOR TEST</title>
-      <link>https://plog.uk/posts/update-my-blog/</link>
+      <link>https://plog.uk/posts/%E5%8D%9A%E5%AE%A2%E6%94%B9%E7%89%88%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://plog.uk/posts/update-my-blog/</guid>
-      <description>#just testing for showtoc #just testing for showtoc2</description>
-    </item>
-    <item>
-      <title>测试中文标题</title>
-      <link>https://plog.uk/posts/update-my-blog-%E5%89%AF%E6%9C%AC/</link>
-      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://plog.uk/posts/update-my-blog-%E5%89%AF%E6%9C%AC/</guid>
-      <description>测试中文内容 #just testing for showtoc #just testing for showtoc2</description>
+      <guid>https://plog.uk/posts/%E5%8D%9A%E5%AE%A2%E6%94%B9%E7%89%88%E8%AE%B0%E5%BD%95/</guid>
+      <description>之前的博客尝试过hexo,后来觉得部署发布太麻烦，然后换了notion next(不愿意折腾还是用这个最好，在notion写好即可实时同步，连排版都省心了)。
+虽然notionnext已经接近完美，但思考之后还是决定换到hugo，主要基于以下几点考虑：
+1.大神的blog的博客都是极简风（比如Lex fridman，Sam Altman，V神），主要还是专注在内容。在排版上花太多感觉有点背离输出内容的初衷。
+2.之前TASS课程介绍到SEO文章的排版，主打的也是一文到底的极简风格（比如Brian Dean）
+3.老觉得notion这种中心化平台会跑路，也怕API不稳定，数据还是在自己手里安全。
+4.想改变整个知识输出输入的方式，目前计划是采用Logseq(md file)(整理)+readwise（收集）+blog(输出)，博客改版算是配合起来。
+5.整个版面放弃了目录，层级，分类，只用标签和搜索来管理，这也更符合人的直觉（我要慢慢脱离用目录树的习惯。）
+以下记录下大致过程：
+本地部署环境（windows）两个：hugo git
+主题使用paper mod ,本地环境使用hugo 生成 pulic 文件夹静态文件，使用hugo server 调试完毕后，用git push 至 github page仓库
+过程中折腾时间比较多的就是使用git 和 hugo 的css 样式调用bug
+最终引用了stackoverflow的方案解决掉了：
+I replaced:
+integrity=&amp;ldquo;J6YEe5hjKuk/TENUR7jEMr6VNR4lwN8iVpSGj1g8MU4=&amp;rdquo;
+with:
+integrity=&amp;quot;&amp;quot;
+主目录：hugo
+public目录： git add . git commit -m &amp;lsquo;commit info&amp;rsquo; git push -u origin master</description>
     </item>
   </channel>
 </rss>
